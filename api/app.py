@@ -178,7 +178,7 @@ def ping():
 
 # Start the Flask server
 if __name__ == '__main__':
-    local_dev = True
+    local_dev = False
     if local_dev:
         port = int(os.getenv('PORT', 5000))
         app.run(host='0.0.0.0', port=port, debug=True)
